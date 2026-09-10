@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caleb Mwanza — Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="loader"><span>CM /</span></div>
+
+<nav>
+  <div class="logo">CM /</div>
+  <div class="navlinks">
+    <a href="#work">Work</a>
+    <a href="#video">Video</a>
+    <a href="#systems">Systems</a>
+    <a href="#about">About</a>
+    <a href="#stack">Stack</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-bg">
+    <div class="hero-bg-slide" style="background-image:url('images/caleb-01.jpg'), linear-gradient(160deg,#1c1c20,#0a0a0a);background-position:center 20%;"></div>
+    <div class="hero-bg-slide" style="background-image:url('images/caleb-02.jpg'), linear-gradient(160deg,#14171a,#0a0a0a);background-position:center 20%;"></div>
+    <div class="hero-bg-slide" style="background-image:url('images/caleb-03.jpg'), linear-gradient(160deg,#1a171c,#0a0a0a);background-position:center 20%;"></div>
+    <div class="hero-bg-slide" style="background-image:url('images/caleb-04.jpg'), linear-gradient(160deg,#171a1c,#0a0a0a);background-position:center 20%;"></div>
+  </div>
+  <div class="hero-bg-overlay"></div>
+  <canvas id="hero-grid"></canvas>
+  <div class="wrap hero-inner">
+    <h1>
+      <span class="line"><span>SOFTWARE</span></span>
+      <span class="line"><span>ENGINEER.</span></span>
+    </h1>
+    <p class="hero-sub">
+      I'm <b>Caleb Mwanza</b> — building web platforms and Android applications, keeping
+      systems running, and editing video on the side. Based in Nairobi, Kenya.
+    </p>
+    <div class="hero-cta">
+      <a href="#work" class="btn-primary" id="heroCta">View my work</a>
+      <a href="#contact" class="btn-secondary">Let's talk</a>
+    </div>
+  </div>
+  <div class="scroll-hint"><div class="dash"></div> Scroll</div>
+</header>
+
+<!-- INTRO -->
+<section class="wrap" id="intro">
+  <div class="section-label">Introduction</div>
+  <h2 class="section-title">I turn ideas, problems and business processes into software.</h2>
+  <p class="intro-body">
+    I'm a software engineer focused on building full-stack applications, mobile solutions,
+    automation systems and reliable digital infrastructure — the kind of work that quietly
+    keeps a business running.
+  </p>
+</section>
+
+<!-- STATS -->
+<div class="stats wrap">
+  <div class="stat"><div class="stat-num" data-count="6">0</div><div class="stat-label">Years experience</div></div>
+  <div class="stat"><div class="stat-num" data-count="150">0</div><div class="stat-label">Projects built</div></div>
+  <div class="stat"><div class="stat-num-inf">∞</div><div class="stat-label">Problems solved</div></div>
+</div>
+
+<!-- WORK -->
+<section class="wrap" id="work">
+  <div class="section-label">Selected work</div>
+  <h2 class="section-title" style="margin-bottom:24px;">Projects worth showing.</h2>
+
+  <!-- PROJECT 01 : Kenya Car Intelligence -->
+  <div class="project">
+    <div class="project-visual">
+      <div class="browser" style="height:100%;">
+        <div class="browser-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="browser-url">kenyacarintelligence.com</div></div>
+        <div class="browser-screenshot"><img src="images/car-intelligence-shot-01.png" alt="Kenya Car Intelligence buying guides page"></div>
+      </div>
+    </div>
+    <div>
+      <div class="project-num">Project 01</div>
+      <h3>Kenya Car Intelligence</h3>
+      <p class="project-desc">A research platform for car buyers in Kenya — market prices,
+      valuation tools, ownership and import cost breakdowns, and buying guides in one place.</p>
+      <div class="tags">
+        <span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Node.js</span>
+      </div>
+      <div class="project-mini-gallery">
+        <div class="mini" style="background-image:url('images/car-intelligence-gallery-01.jpg'), linear-gradient(160deg,#141416,#0d0d0f);"></div>
+        <div class="mini" style="background-image:url('images/car-intelligence-gallery-02.jpg'), linear-gradient(160deg,#141416,#0d0d0f);"></div>
+        <div class="mini" style="background-image:url('images/car-intelligence-gallery-03.jpg'), linear-gradient(160deg,#141416,#0d0d0f);"></div>
+      </div>
+      <div class="project-actions">
+        <a href="car-intelligence.html" class="project-link">View project ↗</a>
+        <button class="demo-btn" onclick="openDemo('https://kenyacarintelligence.com','Kenya Car Intelligence')"><span class="dot"></span>Live demo</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT 02 : Sales Automation -->
+  <div class="project">
+    <div class="project-visual">
+      <div class="browser">
+        <div class="browser-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="browser-url">dashboard.internal</div></div>
+        <div class="browser-screenshot"><img src="images/sales-automation-shot-01.jpg" alt="Sales Automation System screenshot"></div>
+      </div>
+    </div>
+    <div>
+      <div class="project-num">Project 02</div>
+      <h3>Sales Automation System</h3>
+      <p class="project-desc">A business automation platform designed to streamline sales
+      processes, data management and reporting for a growing team.</p>
+      <div class="tags">
+        <span class="tag">Java</span><span class="tag">Spring Boot</span>
+        <span class="tag">React</span><span class="tag">PostgreSQL</span>
+      </div>
+      <div class="project-mini-gallery">
+        <div class="mini" style="background-image:url('images/sales-automation-gallery-01.jpg'), linear-gradient(160deg,#141416,#0d0d0f);"></div>
+        <div class="mini" style="background-image:url('images/sales-automation-gallery-02.jpg'), linear-gradient(160deg,#141416,#0d0d0f);"></div>
+        <div class="mini" style="background-image:url('images/sales-automation-gallery-03.jpg'), linear-gradient(160deg,#141416,#0d0d0f);"></div>
+      </div>
+      <div class="project-actions">
+        <a href="sales-automation.html" class="project-link">View project ↗</a>
+        <button class="demo-btn" onclick="openDemo(null,'Sales Automation System')"><span class="dot"></span>Live demo</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT 03 : Android POS -->
+  <div class="project">
+    <div class="project-visual">
+      <div class="phone-wrap">
+        <div class="phone">
+          <div class="phone-screenshot"><img src="images/android-pos-shot-01.jpg" alt="POS Android app screenshot"></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="project-num">Project 03</div>
+      <h3>POS / Android Application</h3>
+      <p class="project-desc">A point-of-sale system built for Android — designed for speed
+      at the till and reliability offline.</p>
+      <div class="tags">
+        <span class="tag">Kotlin</span><span class="tag">Android SDK</span><span class="tag">SQLite</span>
+      </div>
+      <div class="project-mini-gallery">
+        <div class="mini" style="background-image:url('images/android-pos-gallery-01.jpg'), linear-gradient(160deg,#141416,#0d0d0f);"></div>
+        <div class="mini" style="background-image:url('images/android-pos-gallery-02.jpg'), linear-gradient(160deg,#141416,#0d0d0f);"></div>
+        <div class="mini" style="background-image:url('images/android-pos-gallery-03.jpg'), linear-gradient(160deg,#141416,#0d0d0f);"></div>
+      </div>
+      <div class="project-actions">
+        <a href="android-pos.html" class="project-link">View project ↗</a>
+        <button class="demo-btn" onclick="openDemo(null,'POS / Android Application')"><span class="dot"></span>Live demo</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="view-all-wrap">
+    <a href="projects.html" class="btn-secondary view-all-link">View all projects ↗</a>
+  </div>
+</section>
+
+<!-- TRANSITION -->
+<div class="transition-statement wrap">
+  <div class="big">FROM IDEA</div>
+  <div class="big hi">TO PRODUCT.</div>
+</div>
+
+<!-- VIDEO EDITING -->
+<section class="wrap" id="video">
+  <div class="section-label">Also, I edit video</div>
+  <h2 class="section-title" style="margin-bottom:24px;">A different set of skills.</h2>
+  <p class="intro-body" style="margin-top:0;margin-bottom:0;max-width:560px;">Outside of code,
+  I edit video — color grading, motion graphics and short-form cuts. A few examples below.</p>
+
+  <div class="video-grid">
+    <!-- VIDEO 01 -->
+    <div class="video-card">
+      <div class="video-card-media">
+        <video class="detail-video" poster="images/video-color-grading-shot.jpg" data-src="images/video-color-grading-preview.mp4" muted loop playsinline preload="none" aria-label="Color grading reel preview"></video>
+        <div class="video-play"><span>▶</span></div>
+      </div>
+      <div class="video-card-body">
+        <div class="video-card-tag">Color grading</div>
+        <h3>Cinematic Color Pass</h3>
+        <p class="video-card-desc">A short narrative piece graded for a warm, filmic look.</p>
+        <a href="https://youtu.be/Og5UpNG8JO4?si=YY49Fogv5mR8HpFD" target="_blank" rel="noopener" class="video-card-link">Watch on YouTube ↗</a>
+      </div>
+    </div>
+
+    <!-- VIDEO 02 -->
+    <div class="video-card">
+      <div class="video-card-media">
+        <video class="detail-video" poster="images/video-motion-graphics-shot.jpg" data-src="images/video-motion-graphics-preview.mp4" muted loop playsinline preload="none" aria-label="Motion graphics reel preview"></video>
+        <div class="video-play"><span>▶</span></div>
+      </div>
+      <div class="video-card-body">
+        <div class="video-card-tag">Motion graphics</div>
+        <h3>Product Launch Motion</h3>
+        <p class="video-card-desc">An animated teaser built around a product launch.</p>
+        <a href="https://youtu.be/9uL7MOA2OE8?si=2H_JGKTabBIgSWPd" target="_blank" rel="noopener" class="video-card-link">Watch on YouTube ↗</a>
+      </div>
+    </div>
+
+    <!-- VIDEO 03 -->
+    <div class="video-card">
+      <div class="video-card-media">
+        <video class="detail-video" poster="images/video-shortform-shot.jpg" data-src="images/video-shortform-preview.mp4" muted loop playsinline preload="none" aria-label="Short-form reel preview"></video>
+        <div class="video-play"><span>▶</span></div>
+      </div>
+      <div class="video-card-body">
+        <div class="video-card-tag">Short-form / Reels</div>
+        <h3>Behind the Build</h3>
+        <p class="video-card-desc">A vertical, fast-cut reel following a project from idea to
+        ship.</p>
+        <a href="https://youtu.be/fJCbzjppkH8?si=dv6Uu_OQLU4ZLj59" target="_blank" rel="noopener" class="video-card-link">Watch on YouTube ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="view-all-wrap">
+    <a href="video-editing.html" class="btn-secondary view-all-link">View all edits ↗</a>
+  </div>
+</section>
+
+<!-- SYSTEMS ADMIN / DEVOPS / IT SUPPORT -->
+<section class="wrap" id="systems">
+  <div class="section-label">Also, I keep things running</div>
+  <h2 class="section-title" style="margin-bottom:8px;">Systems, DevOps &amp; support.</h2>
+</section>
+<div class="systems-grid wrap">
+  <div class="service">
+    <div class="service-visual" style="background-image:url('images/systems-networking.jpg'), linear-gradient(160deg,#141416,#0d0d0f);"><span class="slide-label">images/systems-networking.jpg</span></div>
+    <div class="service-num">01</div><h4>Networking</h4><p>Setting up and troubleshooting local networks, routing and firewall rules.</p>
+  </div>
+  <div class="service">
+    <div class="service-visual" style="background-image:url('images/systems-server-admin.jpg'), linear-gradient(160deg,#141416,#0d0d0f);"><span class="slide-label">images/systems-server-admin.jpg</span></div>
+    <div class="service-num">02</div><h4>Server admin</h4><p>Provisioning, hardening and maintaining Linux servers in production.</p>
+  </div>
+  <div class="service">
+    <div class="service-visual" style="background-image:url('images/systems-monitoring-backups.jpg'), linear-gradient(160deg,#141416,#0d0d0f);"><span class="slide-label">images/systems-monitoring-backups.jpg</span></div>
+    <div class="service-num">03</div><h4>Monitoring &amp; backups</h4><p>Alerting and backup systems that catch problems before they become outages.</p>
+  </div>
+  <div class="service">
+    <div class="service-visual" style="background-image:url('images/systems-automation-scripting.jpg'), linear-gradient(160deg,#141416,#0d0d0f);"><span class="slide-label">images/systems-automation-scripting.jpg</span></div>
+    <div class="service-num">04</div><h4>Automation &amp; scripting</h4><p>Bash and scripted tooling that removes repetitive systems work.</p>
+  </div>
+  <div class="service">
+    <div class="service-visual" style="background-image:url('images/systems-cicd-deployment.jpg'), linear-gradient(160deg,#141416,#0d0d0f);"><span class="slide-label">images/systems-cicd-deployment.jpg</span></div>
+    <div class="service-num">05</div><h4>CI/CD &amp; deployment</h4><p>Building deployment pipelines that ship code safely, and often.</p>
+  </div>
+  <div class="service">
+    <div class="service-visual" style="background-image:url('images/systems-troubleshooting-support.jpg'), linear-gradient(160deg,#141416,#0d0d0f);"><span class="slide-label">images/systems-troubleshooting-support.jpg</span></div>
+    <div class="service-num">06</div><h4>Troubleshooting &amp; support</h4><p>Diagnosing hardware, software and connectivity issues end users actually hit.</p>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="wrap" id="about">
+  <div class="section-label">About</div>
+  <h2 class="section-title" style="margin-bottom:48px;">I like building things that solve real problems.</h2>
+  <div class="about-grid">
+    <div class="avatar">
+      <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice">
+        <circle cx="150" cy="150" r="55" fill="none" stroke="#c8ff4d" stroke-width="1.5" opacity="0.8"/>
+        <path d="M60 340 Q60 240 150 240 Q240 240 240 340" fill="none" stroke="#c8ff4d" stroke-width="1.5" opacity="0.8"/>
+        <line x1="0" y1="150" x2="300" y2="150" stroke="#232326" stroke-width="1"/>
+        <line x1="150" y1="0" x2="150" y2="400" stroke="#232326" stroke-width="1"/>
+      </svg>
+    </div>
+    <div class="about-text">
+      <p>I'm a software engineer with experience building web applications, Android
+      applications, business systems and automation solutions.</p>
+      <p>My work sits between software development and real-world problem solving —
+      from designing databases and APIs to building interfaces people actually use.</p>
+      <div class="location-tag">Based in Nairobi, Kenya</div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="wrap">
+  <div class="section-label">Experience</div>
+  <h2 class="section-title">Where the work happened.</h2>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-year">2026</div>
+      <div>
+        <div class="tl-role">Software Engineering</div>
+        <div class="tl-detail">Leading full-stack development across web platforms, focused on MotorPass and related systems.</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-year">2025</div>
+      <div>
+        <div class="tl-role">Full-Stack Development</div>
+        <div class="tl-detail">Built and shipped business applications end to end — API, database and interface.</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-year">2024</div>
+      <div>
+        <div class="tl-role">Systems &amp; Automation</div>
+        <div class="tl-detail">Designed automation tooling to remove repetitive manual work from sales and operations.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STACK -->
+<section class="wrap" id="stack">
+  <div class="section-label">Toolkit</div>
+  <h2 class="section-title">Tools I build with.</h2>
+  <div class="stack-field">
+    <div class="stack-item">React</div>
+    <div class="stack-item">Next.js</div>
+    <div class="stack-item">TypeScript</div>
+    <div class="stack-item">Java</div>
+    <div class="stack-item">Spring Boot</div>
+    <div class="stack-item">Kotlin</div>
+    <div class="stack-item">PostgreSQL</div>
+    <div class="stack-item">MongoDB</div>
+    <div class="stack-item">Node.js</div>
+    <div class="stack-item">Tailwind</div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="wrap">
+  <div class="section-label">What I do</div>
+  <h2 class="section-title" style="margin-bottom:8px;">Four things I'm good at.</h2>
+</section>
+<div class="services wrap">
+  <div class="service"><div class="service-num">01</div><h4>Web</h4><p>Modern web applications and platforms, front to back.</p></div>
+  <div class="service"><div class="service-num">02</div><h4>Mobile</h4><p>Android applications and mobile solutions.</p></div>
+  <div class="service"><div class="service-num">03</div><h4>Backend</h4><p>APIs, databases and the business logic that ties them together.</p></div>
+  <div class="service"><div class="service-num">04</div><h4>Automation</h4><p>Systems that quietly remove repetitive work.</p></div>
+</div>
+
+<!-- PHILOSOPHY -->
+<section class="wrap">
+  <div class="section-label">Philosophy</div>
+  <h2 class="section-title">Good software should disappear into the experience.</h2>
+  <div class="principles">
+    <div class="principle"><div class="principle-num">01</div><h4>Simple</h4><p>Complex problems don't always require complicated solutions.</p></div>
+    <div class="principle"><div class="principle-num">02</div><h4>Reliable</h4><p>Software needs to work when people depend on it.</p></div>
+    <div class="principle"><div class="principle-num">03</div><h4>Purposeful</h4><p>Every feature should have a reason to exist.</p></div>
+  </div>
+</section>
+
+<!-- CURRENTLY BUILDING -->
+<section class="wrap">
+  <div class="section-label">Currently building</div>
+  <div class="building-card">
+    <div>
+      <h4>MotorPass</h4>
+      <p>Automotive technology platform</p>
+    </div>
+    <div class="status"><div class="dot"></div> Active</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="wrap contact" id="contact">
+  <div class="section-label" style="text-align:center;">Get in touch</div>
+  <h2>HAVE AN IDEA?<br>LET'S BUILD IT.</h2>
+  <div class="contact-links">
+    <a href="mailto:hello@calebmwanza.dev">Email</a>
+    <a href="https://github.com" target="_blank">GitHub</a>
+    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+  </div>
+</section>
+
+<footer class="wrap">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">Caleb Mwanza</div>
+      <div class="footer-sub">Software Engineer · Nairobi, Kenya</div>
+    </div>
+    <div class="footer-links">
+      <a href="#work">Work</a><a href="#about">About</a>
+      <a href="https://github.com">GitHub</a><a href="https://linkedin.com">LinkedIn</a>
+      <a href="mailto:hello@calebmwanza.dev">Email</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 Caleb Mwanza — Built with Next.js</div>
+</footer>
+
+<!-- LIVE DEMO MODAL -->
+<div class="demo-modal" id="demoModal">
+  <div class="demo-modal-inner">
+    <div class="demo-modal-bar">
+      <span class="demo-modal-title" id="demoModalTitle">Live demo</span>
+      <div class="demo-modal-actions">
+        <a id="demoModalOpen" href="#" target="_blank" rel="noopener" class="demo-modal-openlink">Open in new tab ↗</a>
+        <button class="demo-modal-close" onclick="closeDemo()" aria-label="Close demo">✕</button>
+      </div>
+    </div>
+    <div class="demo-modal-body" id="demoModalBody"></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

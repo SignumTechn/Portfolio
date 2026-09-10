@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kenya Car Intelligence — Caleb Mwanza</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="loader"><span>CM /</span></div>
+
+<nav>
+  <div class="logo">CM /</div>
+  <div class="navlinks">
+    <a href="index.html#work">Work</a>
+    <a href="index.html#video">Video</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#stack">Stack</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="wrap detail-hero">
+  <a href="index.html#work" class="detail-back">← Back to work</a>
+  <div class="detail-kicker">Project 01 · Web platform</div>
+  <h1 class="detail-title">Kenya Car Intelligence</h1>
+  <p class="detail-tagline">A research platform that helps car buyers in Kenya make an
+  informed decision before they spend money — market prices, valuation, ownership and import
+  costs, and buying guides in one place.</p>
+  <div class="detail-meta">
+    <div><span class="k">Role</span><span class="v">Full-stack engineer</span></div>
+    <div><span class="k">Timeline</span><span class="v">2026</span></div>
+    <div><span class="k">Stack</span><span class="v">Next.js · TypeScript · Node.js</span></div>
+  </div>
+  <div class="detail-actions">
+    <button class="btn-primary" onclick="openDemo('https://kenyacarintelligence.com','Kenya Car Intelligence')">Live demo</button>
+    <a href="#work" class="btn-secondary" onclick="document.querySelector('.gallery-grid').scrollIntoView({behavior:'smooth'});return false;">See more screens</a>
+  </div>
+  <div class="detail-visual">
+    <div class="browser" style="height:100%;">
+      <div class="browser-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="browser-url">kenyacarintelligence.com/buying-guides</div></div>
+      <div class="browser-screenshot"><video class="detail-video" poster="images/car-intelligence-shot-01.png" data-src="images/car-intelligence-demo.mp4" muted loop playsinline preload="none" aria-label="Kenya Car Intelligence walkthrough"></video></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="overview-grid">
+    <div>
+      <h4>The problem</h4>
+      <p>Buying a car in Kenya means piecing together information from dealer listings, forums
+      and word of mouth — market prices, real ownership costs, and import duties all live in
+      different places, if they're written down at all.</p>
+    </div>
+    <div>
+      <h4>The solution</h4>
+      <p>One platform that brings valuation, cost breakdowns and buying guides together, so a
+      buyer can go from "which car" to "how much will this actually cost me" without leaving
+      the site.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="section-label">How it works</div>
+  <h2 class="section-title">From research to decision.</h2>
+  <div class="steps-list">
+    <div class="step">
+      <div class="step-num">01</div>
+      <div><h4>Explore &amp; compare</h4><p>Buyers browse cars by make, model and price, or put
+      two vehicles side by side to compare specs and estimated running costs directly.</p></div>
+    </div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <div><h4>Valuation &amp; market prices</h4><p>A valuation tool estimates a fair price for
+      a specific vehicle using current market data, so a buyer knows if a listing is over- or
+      under-priced before making an offer.</p></div>
+    </div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <div><h4>Ownership &amp; import cost breakdowns</h4><p>Separate calculators lay out what a
+      car actually costs to run locally, and what it costs to bring in from abroad — duties,
+      fees and all — turned into numbers instead of guesswork.</p></div>
+    </div>
+    <div class="step">
+      <div class="step-num">04</div>
+      <div><h4>Guides &amp; car finder</h4><p>Buying guides answer the recurring questions —
+      inspection checklists, petrol vs diesel, what to check before buying — while the car
+      finder narrows the whole catalogue down to a shortlist that fits the buyer's budget.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="section-label">Architecture</div>
+  <h2 class="section-title">How the pieces connect.</h2>
+  <div class="diagram">
+    <div class="diagram-node"><div class="t">Next.js client</div><div class="s">Web UI</div></div>
+    <div class="diagram-arrow"></div>
+    <div class="diagram-node"><div class="t">Node.js API</div><div class="s">Valuation logic</div></div>
+    <div class="diagram-arrow"></div>
+    <div class="diagram-node"><div class="t">Market data</div><div class="s">Prices, listings</div></div>
+    <div class="diagram-arrow"></div>
+    <div class="diagram-node"><div class="t">Database</div><div class="s">Cars, guides</div></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="section-label">More screens</div>
+  <h2 class="section-title">Around the product.</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item" style="background-image:url('images/car-intelligence-gallery-01.jpg'), linear-gradient(160deg,#141416,#0d0d0f);"></div>
+    <div class="gallery-item" style="background-image:url('images/car-intelligence-gallery-02.jpg'), linear-gradient(160deg,#141416,#0d0d0f);"></div>
+    <div class="gallery-item" style="background-image:url('images/car-intelligence-gallery-03.jpg'), linear-gradient(160deg,#141416,#0d0d0f);"></div>
+  </div>
+</section>
+
+<div class="wrap detail-nextprev">
+  <a href="index.html#work">← All projects</a>
+  <a href="sales-automation.html">Sales Automation System →</a>
+</div>
+
+<footer class="wrap">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">Caleb Mwanza</div>
+      <div class="footer-sub">Software Engineer · Nairobi, Kenya</div>
+    </div>
+    <div class="footer-links">
+      <a href="index.html#work">Work</a><a href="index.html#about">About</a>
+      <a href="https://github.com">GitHub</a><a href="https://linkedin.com">LinkedIn</a>
+      <a href="mailto:hello@calebmwanza.dev">Email</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 Caleb Mwanza — Built with Next.js</div>
+</footer>
+
+<!-- LIVE DEMO MODAL -->
+<div class="demo-modal" id="demoModal">
+  <div class="demo-modal-inner">
+    <div class="demo-modal-bar">
+      <span class="demo-modal-title" id="demoModalTitle">Live demo</span>
+      <div class="demo-modal-actions">
+        <a id="demoModalOpen" href="#" target="_blank" rel="noopener" class="demo-modal-openlink">Open in new tab ↗</a>
+        <button class="demo-modal-close" onclick="closeDemo()" aria-label="Close demo">✕</button>
+      </div>
+    </div>
+    <div class="demo-modal-body" id="demoModalBody"></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

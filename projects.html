@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Projects — Caleb Mwanza</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="loader"><span>CM /</span></div>
+
+<nav>
+  <div class="logo">CM /</div>
+  <div class="navlinks">
+    <a href="index.html#work">Work</a>
+    <a href="index.html#video">Video</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#stack">Stack</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="wrap detail-hero" style="padding-bottom:0;">
+  <a href="index.html#work" class="detail-back">← Back to work</a>
+  <div class="detail-kicker">All projects</div>
+  <h1 class="detail-title" style="font-size:clamp(34px,6vw,64px);">Everything I've built.</h1>
+  <p class="detail-tagline">The full list — web platforms, mobile apps and automation systems.
+  Pick one to see how it works under the hood.</p>
+</section>
+
+<section class="wrap" style="padding-top:0;">
+  <div class="projects-grid">
+
+    <!-- Kenya Car Intelligence -->
+    <div class="projects-grid-card">
+      <div class="projects-grid-visual" style="background-image:url('images/car-intelligence-shot-01.png');"></div>
+      <div class="projects-grid-body">
+        <div class="projects-grid-num">Project 01 · Web platform</div>
+        <h3>Kenya Car Intelligence</h3>
+        <p class="projects-grid-desc">A research platform for car buyers in Kenya — market
+        prices, valuation tools, ownership and import cost breakdowns, and buying guides in
+        one place.</p>
+        <div class="projects-grid-tags">
+          <span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Node.js</span>
+        </div>
+        <div class="projects-grid-actions">
+          <a href="car-intelligence.html" class="projects-grid-link">View project ↗</a>
+          <button class="demo-btn" onclick="openDemo('https://kenyacarintelligence.com','Kenya Car Intelligence')"><span class="dot"></span>Live demo</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sales Automation System -->
+    <div class="projects-grid-card">
+      <div class="projects-grid-visual" style="background-image:url('images/sales-automation-shot-01.jpg');"></div>
+      <div class="projects-grid-body">
+        <div class="projects-grid-num">Project 02 · Internal platform</div>
+        <h3>Sales Automation System</h3>
+        <p class="projects-grid-desc">A business automation platform designed to streamline
+        sales processes, data management and reporting for a growing team.</p>
+        <div class="projects-grid-tags">
+          <span class="tag">Java</span><span class="tag">Spring Boot</span>
+          <span class="tag">React</span><span class="tag">PostgreSQL</span>
+        </div>
+        <div class="projects-grid-actions">
+          <a href="sales-automation.html" class="projects-grid-link">View project ↗</a>
+          <button class="demo-btn" onclick="openDemo(null,'Sales Automation System')"><span class="dot"></span>Live demo</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- POS / Android Application -->
+    <div class="projects-grid-card">
+      <div class="projects-grid-visual" style="background-image:url('images/android-pos-shot-01.jpg');"></div>
+      <div class="projects-grid-body">
+        <div class="projects-grid-num">Project 03 · Mobile</div>
+        <h3>POS / Android Application</h3>
+        <p class="projects-grid-desc">A point-of-sale system built for Android — designed for
+        speed at the till and reliability offline.</p>
+        <div class="projects-grid-tags">
+          <span class="tag">Kotlin</span><span class="tag">Android SDK</span><span class="tag">SQLite</span>
+        </div>
+        <div class="projects-grid-actions">
+          <a href="android-pos.html" class="projects-grid-link">View project ↗</a>
+          <button class="demo-btn" onclick="openDemo(null,'POS / Android Application')"><span class="dot"></span>Live demo</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trailquest -->
+    <div class="projects-grid-card">
+      <div class="projects-grid-visual" style="background-image:url('images/trailquest-shot-01.jpg');"></div>
+      <div class="projects-grid-body">
+        <div class="projects-grid-num">Project 04 · Web platform</div>
+        <h3>Trailquest</h3>
+        <p class="projects-grid-desc">A discovery and planning platform for road trips and
+        hikes — curated trails, route planning and trip reports for adventure hunters.</p>
+        <div class="projects-grid-tags">
+          <span class="tag">Next.js</span><span class="tag">Node.js</span><span class="tag">Mapbox</span><span class="tag">PostgreSQL</span>
+        </div>
+        <div class="projects-grid-actions">
+          <a href="trailquest.html" class="projects-grid-link">View project ↗</a>
+          <button class="demo-btn" onclick="openDemo(null,'Trailquest')"><span class="dot"></span>Live demo</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MotorPass -->
+    <div class="projects-grid-card">
+      <div class="projects-grid-visual" style="background-image:url('images/motorpass-shot-01.jpg');"></div>
+      <div class="projects-grid-body">
+        <div class="projects-grid-num">Project 05 · Web platform</div>
+        <h3>MotorPass</h3>
+        <p class="projects-grid-desc">An automotive marketplace and platform connecting buyers,
+        sellers and service providers — built end to end from data model to interface.</p>
+        <div class="projects-grid-tags">
+          <span class="tag">Next.js</span><span class="tag">TypeScript</span>
+          <span class="tag">Tailwind</span><span class="tag">Spring Boot</span><span class="tag">PostgreSQL</span>
+        </div>
+        <div class="projects-grid-actions">
+          <a href="motorpass.html" class="projects-grid-link">View project ↗</a>
+          <button class="demo-btn" onclick="openDemo('https://motorpass.app','MotorPass')"><span class="dot"></span>Live demo</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="wrap">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">Caleb Mwanza</div>
+      <div class="footer-sub">Software Engineer · Nairobi, Kenya</div>
+    </div>
+    <div class="footer-links">
+      <a href="index.html#work">Work</a><a href="index.html#about">About</a>
+      <a href="https://github.com">GitHub</a><a href="https://linkedin.com">LinkedIn</a>
+      <a href="mailto:hello@calebmwanza.dev">Email</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 Caleb Mwanza — Built with Next.js</div>
+</footer>
+
+<!-- LIVE DEMO MODAL -->
+<div class="demo-modal" id="demoModal">
+  <div class="demo-modal-inner">
+    <div class="demo-modal-bar">
+      <span class="demo-modal-title" id="demoModalTitle">Live demo</span>
+      <div class="demo-modal-actions">
+        <a id="demoModalOpen" href="#" target="_blank" rel="noopener" class="demo-modal-openlink">Open in new tab ↗</a>
+        <button class="demo-modal-close" onclick="closeDemo()" aria-label="Close demo">✕</button>
+      </div>
+    </div>
+    <div class="demo-modal-body" id="demoModalBody"></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

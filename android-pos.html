@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POS / Android Application — Caleb Mwanza</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="loader"><span>CM /</span></div>
+
+<nav>
+  <div class="logo">CM /</div>
+  <div class="navlinks">
+    <a href="index.html#work">Work</a>
+    <a href="index.html#video">Video</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#stack">Stack</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="wrap detail-hero">
+  <a href="index.html#work" class="detail-back">← Back to work</a>
+  <div class="detail-kicker">Project 03 · Mobile</div>
+  <h1 class="detail-title">POS / Android Application</h1>
+  <p class="detail-tagline">A point-of-sale system built for Android — designed for speed at
+  the till and reliability offline.</p>
+  <div class="detail-meta">
+    <div><span class="k">Role</span><span class="v">Android engineer</span></div>
+    <div><span class="k">Timeline</span><span class="v">2024</span></div>
+    <div><span class="k">Stack</span><span class="v">Kotlin · Android SDK · SQLite</span></div>
+  </div>
+  <div class="detail-actions">
+    <button class="btn-primary" onclick="openDemo(null,'POS / Android Application')">Live demo</button>
+  </div>
+  <div class="detail-visual">
+    <div class="phone-wrap">
+      <div class="phone" style="max-width:260px;">
+        <div class="phone-screenshot"><video class="detail-video" poster="images/android-pos-shot-01.jpg" data-src="images/android-pos-demo.mp4" muted loop playsinline preload="none" aria-label="POS Android app walkthrough"></video></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="overview-grid">
+    <div>
+      <h4>The problem</h4>
+      <p>Small retail counters needed a checkout system that stays fast and usable even when
+      the internet connection at the till drops out mid-sale.</p>
+    </div>
+    <div>
+      <h4>The solution</h4>
+      <p>A native Android POS that keeps a local database of the day's transactions and
+      inventory, syncing to the server only when a connection is available.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="section-label">How it works</div>
+  <h2 class="section-title">From scan to receipt.</h2>
+  <div class="steps-list">
+    <div class="step">
+      <div class="step-num">01</div>
+      <div><h4>Item entry</h4><p>A cashier scans or taps items into the cart. Prices and stock
+      counts are read from the local SQLite database first, so there's no lag waiting on a
+      network call.</p></div>
+    </div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <div><h4>Checkout</h4><p>The app totals the cart, applies any discounts, and records the
+      transaction locally the moment payment is confirmed — before any sync happens.</p></div>
+    </div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <div><h4>Offline queueing</h4><p>If there's no connection, the transaction sits in a local
+      queue. The app keeps working exactly the same either way.</p></div>
+    </div>
+    <div class="step">
+      <div class="step-num">04</div>
+      <div><h4>Background sync</h4><p>Once online, queued transactions push to the server and
+      inventory counts reconcile automatically, with conflicts flagged rather than silently
+      overwritten.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="section-label">Architecture</div>
+  <h2 class="section-title">How the pieces connect.</h2>
+  <div class="diagram">
+    <div class="diagram-node"><div class="t">Android UI</div><div class="s">Kotlin, Jetpack</div></div>
+    <div class="diagram-arrow"></div>
+    <div class="diagram-node"><div class="t">Local SQLite</div><div class="s">Offline store</div></div>
+    <div class="diagram-arrow"></div>
+    <div class="diagram-node"><div class="t">Sync worker</div><div class="s">Background job</div></div>
+    <div class="diagram-arrow"></div>
+    <div class="diagram-node"><div class="t">Server API</div><div class="s">Inventory truth</div></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="section-label">More screens</div>
+  <h2 class="section-title">Around the product.</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item" style="background-image:url('images/android-pos-gallery-01.jpg'), linear-gradient(160deg,#141416,#0d0d0f);"></div>
+    <div class="gallery-item" style="background-image:url('images/android-pos-gallery-02.jpg'), linear-gradient(160deg,#141416,#0d0d0f);"></div>
+    <div class="gallery-item" style="background-image:url('images/android-pos-gallery-03.jpg'), linear-gradient(160deg,#141416,#0d0d0f);"></div>
+  </div>
+</section>
+
+<div class="wrap detail-nextprev">
+  <a href="sales-automation.html">← Sales Automation System</a>
+  <a href="trailquest.html">Trailquest →</a>
+</div>
+
+<footer class="wrap">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">Caleb Mwanza</div>
+      <div class="footer-sub">Software Engineer · Nairobi, Kenya</div>
+    </div>
+    <div class="footer-links">
+      <a href="index.html#work">Work</a><a href="index.html#about">About</a>
+      <a href="https://github.com">GitHub</a><a href="https://linkedin.com">LinkedIn</a>
+      <a href="mailto:hello@calebmwanza.dev">Email</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 Caleb Mwanza — Built with Next.js</div>
+</footer>
+
+<!-- LIVE DEMO MODAL -->
+<div class="demo-modal" id="demoModal">
+  <div class="demo-modal-inner">
+    <div class="demo-modal-bar">
+      <span class="demo-modal-title" id="demoModalTitle">Live demo</span>
+      <div class="demo-modal-actions">
+        <a id="demoModalOpen" href="#" target="_blank" rel="noopener" class="demo-modal-openlink">Open in new tab ↗</a>
+        <button class="demo-modal-close" onclick="closeDemo()" aria-label="Close demo">✕</button>
+      </div>
+    </div>
+    <div class="demo-modal-body" id="demoModalBody"></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

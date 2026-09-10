@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trailquest — Caleb Mwanza</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="loader"><span>CM /</span></div>
+
+<nav>
+  <div class="logo">CM /</div>
+  <div class="navlinks">
+    <a href="index.html#work">Work</a>
+    <a href="index.html#video">Video</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#stack">Stack</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="wrap detail-hero">
+  <a href="index.html#work" class="detail-back">← Back to work</a>
+  <div class="detail-kicker">Project 04 · Web platform</div>
+  <h1 class="detail-title">Trailquest</h1>
+  <p class="detail-tagline">A discovery and planning platform for road trips and hikes —
+  built for adventure hunters who want real trail conditions, not scattered blog posts.</p>
+  <div class="detail-meta">
+    <div><span class="k">Role</span><span class="v">Full-stack engineer</span></div>
+    <div><span class="k">Timeline</span><span class="v">2026</span></div>
+    <div><span class="k">Stack</span><span class="v">Next.js · Node.js · Mapbox · PostgreSQL</span></div>
+  </div>
+  <div class="detail-actions">
+    <button class="btn-primary" onclick="openDemo(null,'Trailquest')">Live demo</button>
+  </div>
+  <div class="detail-visual">
+    <div class="browser" style="height:100%;">
+      <div class="browser-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="browser-url">trailquest.app/plan</div></div>
+      <div class="browser-screenshot"><video class="detail-video" poster="images/trailquest-shot-01.jpg" data-src="images/trailquest-demo.mp4" muted loop playsinline preload="none" aria-label="Trailquest walkthrough"></video></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="overview-grid">
+    <div>
+      <h4>The problem</h4>
+      <p>Planning a hike or a road trip usually means piecing together trail difficulty, road
+      conditions and points of interest from scattered blogs, forums and outdated reviews —
+      with no single source anyone actually trusts.</p>
+    </div>
+    <div>
+      <h4>The solution</h4>
+      <p>Trailquest brings curated trails and road-trip routes, difficulty ratings, packing
+      checklists and community trip reports into one map-first platform, so a rough idea
+      becomes a plan someone can actually follow.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="section-label">How it works</div>
+  <h2 class="section-title">From idea to trailhead.</h2>
+  <div class="steps-list">
+    <div class="step">
+      <div class="step-num">01</div>
+      <div><h4>Discover</h4><p>Adventurers browse trails and road-trip routes by region,
+      difficulty and duration, filtered down to whatever fits the weekend they've got.</p></div>
+    </div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <div><h4>Plan the route</h4><p>A route gets laid out on an interactive map, with
+      elevation profile and estimated drive or hike time calculated before anyone leaves the
+      house.</p></div>
+    </div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <div><h4>Pack &amp; prepare</h4><p>A packing checklist is generated automatically from
+      trip length, terrain and season, so nothing critical gets left behind.</p></div>
+    </div>
+    <div class="step">
+      <div class="step-num">04</div>
+      <div><h4>Log &amp; share</h4><p>After the trip, a report — photos, conditions, what
+      changed on the ground — gets logged and feeds back into the platform for the next
+      person planning the same route.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="section-label">Architecture</div>
+  <h2 class="section-title">How the pieces connect.</h2>
+  <div class="diagram">
+    <div class="diagram-node"><div class="t">Next.js client</div><div class="s">Map &amp; UI</div></div>
+    <div class="diagram-arrow"></div>
+    <div class="diagram-node"><div class="t">Node.js API</div><div class="s">Trips, routes</div></div>
+    <div class="diagram-arrow"></div>
+    <div class="diagram-node"><div class="t">Mapbox</div><div class="s">Geo &amp; elevation</div></div>
+    <div class="diagram-arrow"></div>
+    <div class="diagram-node"><div class="t">PostgreSQL</div><div class="s">Trails, reports</div></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="section-label">More screens</div>
+  <h2 class="section-title">Around the product.</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item" style="background-image:url('images/trailquest-gallery-01.jpg'), linear-gradient(160deg,#141416,#0d0d0f);"></div>
+    <div class="gallery-item" style="background-image:url('images/trailquest-gallery-02.jpg'), linear-gradient(160deg,#141416,#0d0d0f);"></div>
+    <div class="gallery-item" style="background-image:url('images/trailquest-gallery-03.jpg'), linear-gradient(160deg,#141416,#0d0d0f);"></div>
+  </div>
+</section>
+
+<div class="wrap detail-nextprev">
+  <a href="android-pos.html">← POS / Android Application</a>
+  <a href="motorpass.html">MotorPass →</a>
+</div>
+
+<footer class="wrap">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">Caleb Mwanza</div>
+      <div class="footer-sub">Software Engineer · Nairobi, Kenya</div>
+    </div>
+    <div class="footer-links">
+      <a href="index.html#work">Work</a><a href="index.html#about">About</a>
+      <a href="https://github.com">GitHub</a><a href="https://linkedin.com">LinkedIn</a>
+      <a href="mailto:hello@calebmwanza.dev">Email</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 Caleb Mwanza — Built with Next.js</div>
+</footer>
+
+<!-- LIVE DEMO MODAL -->
+<div class="demo-modal" id="demoModal">
+  <div class="demo-modal-inner">
+    <div class="demo-modal-bar">
+      <span class="demo-modal-title" id="demoModalTitle">Live demo</span>
+      <div class="demo-modal-actions">
+        <a id="demoModalOpen" href="#" target="_blank" rel="noopener" class="demo-modal-openlink">Open in new tab ↗</a>
+        <button class="demo-modal-close" onclick="closeDemo()" aria-label="Close demo">✕</button>
+      </div>
+    </div>
+    <div class="demo-modal-body" id="demoModalBody"></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
