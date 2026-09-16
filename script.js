@@ -232,6 +232,26 @@ document.querySelectorAll('.video-card').forEach(card => {
   }, {passive:true});
 });
 
+/* ---- WhatsApp quote requests ----------------------------------------
+   Every "Get a quote" button across the site routes here. Each one passes
+   the service it belongs to, so the message that opens is already written
+   and specific — the client only has to hit send.
+
+   >>> REPLACE THE NUMBER BELOW WITH YOUR REAL WHATSAPP NUMBER <<<
+   Full international format, digits only: no +, no spaces, no dashes.
+   Kenya example: 254712345678
+--------------------------------------------------------------------- */
+const WHATSAPP_NUMBER = '254791847561';
+
+function getQuote(service){
+  const message =
+    'Hello Caleb, I found your portfolio and I would like to request a quote for ' +
+    service + '. Could you share your availability and pricing?';
+  const url = 'https://wa.me/' + WHATSAPP_NUMBER +
+              '?text=' + encodeURIComponent(message);
+  window.open(url, '_blank', 'noopener');
+}
+
 /* ---- timeline accordion ---- */
 document.querySelectorAll('.tl-item').forEach(item=>{
   item.addEventListener('click', ()=>{
